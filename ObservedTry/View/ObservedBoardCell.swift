@@ -25,7 +25,6 @@ class ObservedBoardCell: BasicBoardCell {
                 self.countLabel.text = String(blog.count)
                 
                 self.toggleColor(blog.toggle)
-
                 
             }
         }

@@ -78,7 +78,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
-        guard let type = RowType.init(rawValue: indexPath.row) else { fatalError("Row is Our of range") }
+        guard let type = RowType.init(rawValue: indexPath.row) else { fatalError("Row is Out of range") }
         cell.textLabel?.text = type.description
         cell.textLabel?.font = .systemFont(ofSize: 25)
         cell.textLabel?.textColor = .blue
