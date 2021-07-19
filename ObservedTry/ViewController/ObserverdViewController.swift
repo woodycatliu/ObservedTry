@@ -10,14 +10,14 @@ import UIKit
 
 /**
  MVC 架構: 反應式編成方式
- - 請參考[Wiki](https://zh.wikipedia.org/wiki/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B "Title") 解釋
+ - 請參考[Wiki](https://zh.wikipedia.org/wiki/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B) 解釋
  
  
  
 #### BoardViewModel:
  - ObservedBoardCell ViewModel
  - 利用 didSet 實現反應式編成，實現與 CurrentValueSubject 類似的觀察模式。
- - 參考文章 [30 天了解 Swift 的 Combine] (https://developer.apple.com/documentation/combine/currentvaluesubject)
+ - 參考文章 [30 天了解 Swift 的 Combine](https://developer.apple.com/documentation/combine/currentvaluesubject)
  - Apple SDK [CurrentValueSubject](https://developer.apple.com/documentation/combine/currentvaluesubject)
  
  */
@@ -70,7 +70,8 @@ extension ObserverdViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ObservedBoardCell.description(), for: indexPath) as! ObservedBoardCell
-        
+        guard cellViewModels.indices.contains(indexPath.row) else { fatalError("Row is Out of range") }
+
         cell.viewModel = cellViewModels[indexPath.row]
         return cell
     }
