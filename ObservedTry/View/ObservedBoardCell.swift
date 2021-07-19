@@ -14,7 +14,6 @@ class ObservedBoardCell: BasicBoardCell {
             // about: $
             // 可以參考:
             // https://insights.dice.com/2019/06/12/xcode-swiftui-dollar-sign-prefix/
-            oldValue?.$blog.cancel()
             viewModel?.$blog.cancel()
             
             viewModel?.$blog {

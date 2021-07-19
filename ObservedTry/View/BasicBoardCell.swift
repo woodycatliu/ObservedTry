@@ -67,6 +67,7 @@ class BasicBoardCell: BoardCellProtocol {
         let btn = UIButton()
         btn.addTarget(self, action: #selector(add), for: .touchUpInside)
         btn.setBackgroundImage(UIImage(systemName: "plus.rectangle"), for: .normal)
+        btn.backgroundColor = .white
         return btn
     }()
     
@@ -74,6 +75,7 @@ class BasicBoardCell: BoardCellProtocol {
         let btn = UIButton()
         btn.addTarget(self, action: #selector(subtract), for: .touchUpInside)
         btn.setBackgroundImage(UIImage(systemName: "minus.rectangle"), for: .normal)
+        btn.backgroundColor = .white   
         return btn
     }()
     
