@@ -16,7 +16,7 @@ protocol BoardProtocol {
 typealias BoardCellProtocol = UITableViewCell & BoardProtocol
 
 class BasicBoardCell: BoardCellProtocol {
-    
+        
     public enum Color {
         case yellow
         case blue

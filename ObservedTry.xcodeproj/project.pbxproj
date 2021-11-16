@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6EC14726ABBFAF00076A53 /* ObjcObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EC14626ABBFAF00076A53 /* ObjcObserved.swift */; };
 		5B71B68B26A3B98D006B62E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B68A26A3B98D006B62E9 /* AppDelegate.swift */; };
 		5B71B68D26A3B98D006B62E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B68C26A3B98D006B62E9 /* SceneDelegate.swift */; };
 		5B71B68F26A3B98D006B62E9 /* ObserverdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B68E26A3B98D006B62E9 /* ObserverdViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B6EC14626ABBFAF00076A53 /* ObjcObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcObserved.swift; sourceTree = "<group>"; };
 		5B71B68726A3B98D006B62E9 /* ObservedTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservedTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B71B68A26A3B98D006B62E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B71B68C26A3B98D006B62E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				5B71B6BB26A3B9A0006B62E9 /* Observed.swift */,
+				5B6EC14626ABBFAF00076A53 /* ObjcObserved.swift */,
 				5B71B6CA26A3E121006B62E9 /* BoardDataModel.swift */,
 			);
 			path = Module;
@@ -371,6 +374,7 @@
 				5B71B68F26A3B98D006B62E9 /* ObserverdViewController.swift in Sources */,
 				5B71B6DA26A3FF56006B62E9 /* WithDataMethodModel.swift in Sources */,
 				5B71B6C226A3BADC006B62E9 /* ObservedBoardCell.swift in Sources */,
+				5B6EC14726ABBFAF00076A53 /* ObjcObserved.swift in Sources */,
 				5B71B6CB26A3E121006B62E9 /* BoardDataModel.swift in Sources */,
 				5B71B6C526A3C6D1006B62E9 /* TableView.swift in Sources */,
 				5B71B6E226A4031D006B62E9 /* ViewController.swift in Sources */,

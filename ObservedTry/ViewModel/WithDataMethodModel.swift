@@ -32,7 +32,7 @@ class WithDataMethodModel {
     func subtract(indexPath: IndexPath) {
         let index = indexPath.row
         guard blogs.indices.contains(index) else { return }
-        blogs[index].add { [weak self] int in
+        blogs[index].subtract { [weak self] int in
             guard let self = self else { return }
             self.blogs[index].count = int
             self.delegate?.reload(indexPaths: [indexPath], isReloadAll: false)

@@ -45,7 +45,6 @@ class APIManager {
                 completion(!bool)
             }
         }
-        
     }
     
 }

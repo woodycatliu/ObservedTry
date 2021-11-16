@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 /**
  MVC 架構 - 命令式編成方式
  model: 處理 Data 相關處理 ，直接與VC 溝通
