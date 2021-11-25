@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BoardViewModel {
+class ObservedViewModel {
     
     @Observed(queue: .main)
     var blog: Blog = .init(count: 0)

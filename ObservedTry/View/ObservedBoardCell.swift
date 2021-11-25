@@ -9,7 +9,7 @@ import UIKit
 
 class ObservedBoardCell: BasicBoardCell {
     
-    var viewModel: BoardViewModel? {
+    var viewModel: ObservedViewModel? {
         didSet {
             // about: $
             // 可以參考:

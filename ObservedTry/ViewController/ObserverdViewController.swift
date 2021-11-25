@@ -23,10 +23,10 @@ import UIKit
  */
 class ObserverdViewController: UIViewController {
     
-    private lazy var cellViewModels: [BoardViewModel] = {
-        var arr: [BoardViewModel] = []
+    private lazy var cellViewModels: [ObservedViewModel] = {
+        var arr: [ObservedViewModel] = []
         for _ in 1...30 {
-            arr.append(BoardViewModel())
+            arr.append(ObservedViewModel())
         }
         return arr
     }()

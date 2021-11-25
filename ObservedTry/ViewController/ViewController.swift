@@ -83,23 +83,19 @@ class ViewController: UIViewController {
     
     enum MultiType: Int, TypeNeed, CaseIterable {
     
-        case old, observed
+        case MultiObserved
         
         var viewController: UIViewController {
             switch self {
-            case .old:
-                return OldViewController()
-            case .observed:
-                return ObserverdViewController()
+            case .MultiObserved:
+                return MultiObservedViewController()
             }
         }
         
         var description: String {
             switch self {
-            case .old:
-                return "old"
-            case .observed:
-                return "observed"
+            case .MultiObserved:
+                return "MultiObserved"
             }
         }
         
@@ -110,7 +106,7 @@ class ViewController: UIViewController {
     }
     
     lazy var tableView: UITableView = {
-        let tv = UITableView(frame: .zero, style: .insetGrouped)
+        let tv = UITableView(frame: .zero)
         tv.register(UITableViewCell.self)
         tv.dataSource = self
         tv.delegate = self
@@ -139,6 +135,7 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         guard let sectionType = SectionType.init(rawValue: indexPath.section),
               let type = sectionType.getRowType(indexPath.row) else { return }
         navigationController?.pushViewController(type.viewController, animated: true)

@@ -31,6 +31,11 @@
 		5B71B6DC26A40035006B62E9 /* OldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B6DB26A40035006B62E9 /* OldViewController.swift */; };
 		5B71B6DE26A402BD006B62E9 /* WithDataMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B6DD26A402BD006B62E9 /* WithDataMethodViewController.swift */; };
 		5B71B6E226A4031D006B62E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B6E126A4031D006B62E9 /* ViewController.swift */; };
+		5B770FDF274E7EC300C28203 /* MultiObservedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FDE274E7EC300C28203 /* MultiObservedManager.swift */; };
+		5B770FE1274E838900C28203 /* ObservableStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE0274E838900C28203 /* ObservableStructure.swift */; };
+		5B770FE3274E84D700C28203 /* MultiObservedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE2274E84D700C28203 /* MultiObservedViewModel.swift */; };
+		5B770FE5274E868A00C28203 /* MultiObservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE4274E868A00C28203 /* MultiObservedViewController.swift */; };
+		5B770FE7274F339800C28203 /* MultiObservedBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE6274F339800C28203 /* MultiObservedBoardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,11 @@
 		5B71B6DD26A402BD006B62E9 /* WithDataMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithDataMethodViewController.swift; sourceTree = "<group>"; };
 		5B71B6E126A4031D006B62E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B71B6E326A46629006B62E9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5B770FDE274E7EC300C28203 /* MultiObservedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedManager.swift; sourceTree = "<group>"; };
+		5B770FE0274E838900C28203 /* ObservableStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableStructure.swift; sourceTree = "<group>"; };
+		5B770FE2274E84D700C28203 /* MultiObservedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedViewModel.swift; sourceTree = "<group>"; };
+		5B770FE4274E868A00C28203 /* MultiObservedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedViewController.swift; sourceTree = "<group>"; };
+		5B770FE6274F339800C28203 /* MultiObservedBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedBoardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +184,7 @@
 				5B71B6BB26A3B9A0006B62E9 /* Observed.swift */,
 				5B6EC14626ABBFAF00076A53 /* ObjcObserved.swift */,
 				5B71B6CA26A3E121006B62E9 /* BoardDataModel.swift */,
+				5B770FE0274E838900C28203 /* ObservableStructure.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -184,6 +195,7 @@
 				5B71B6D926A3FF56006B62E9 /* WithDataMethodModel.swift */,
 				5B71B6BD26A3B9C7006B62E9 /* ObservedViewModel.swift */,
 				5B71B6D526A3FE00006B62E9 /* OldViewModel.swift */,
+				5B770FE2274E84D700C28203 /* MultiObservedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 				5B71B6CC26A3F3AB006B62E9 /* BasicBoardCell.swift */,
 				5B71B6C126A3BADC006B62E9 /* ObservedBoardCell.swift */,
 				5B71B6CE26A3F96E006B62E9 /* NormalBoardCell.swift */,
+				5B770FE6274F339800C28203 /* MultiObservedBoardCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +225,7 @@
 				5B71B68E26A3B98D006B62E9 /* ObserverdViewController.swift */,
 				5B71B6DB26A40035006B62E9 /* OldViewController.swift */,
 				5B71B6DD26A402BD006B62E9 /* WithDataMethodViewController.swift */,
+				5B770FE4274E868A00C28203 /* MultiObservedViewController.swift */,
 				5B71B6E126A4031D006B62E9 /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -228,6 +242,7 @@
 		5B71B6D026A3FA54006B62E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B770FDE274E7EC300C28203 /* MultiObservedManager.swift */,
 				5B71B6D126A3FAA5006B62E9 /* OldModel.swift */,
 				5B71B6D326A3FACB006B62E9 /* TableViewModelDelegate.swift */,
 			);
@@ -366,15 +381,20 @@
 			files = (
 				5B71B6DC26A40035006B62E9 /* OldViewController.swift in Sources */,
 				5B71B6DE26A402BD006B62E9 /* WithDataMethodViewController.swift in Sources */,
+				5B770FE3274E84D700C28203 /* MultiObservedViewModel.swift in Sources */,
 				5B71B6CD26A3F3AB006B62E9 /* BasicBoardCell.swift in Sources */,
+				5B770FE7274F339800C28203 /* MultiObservedBoardCell.swift in Sources */,
 				5B71B6CF26A3F96E006B62E9 /* NormalBoardCell.swift in Sources */,
+				5B770FDF274E7EC300C28203 /* MultiObservedManager.swift in Sources */,
 				5B71B6D426A3FACB006B62E9 /* TableViewModelDelegate.swift in Sources */,
 				5B71B6C926A3DCB9006B62E9 /* APIManager.swift in Sources */,
 				5B71B6BE26A3B9C7006B62E9 /* ObservedViewModel.swift in Sources */,
+				5B770FE5274E868A00C28203 /* MultiObservedViewController.swift in Sources */,
 				5B71B68F26A3B98D006B62E9 /* ObserverdViewController.swift in Sources */,
 				5B71B6DA26A3FF56006B62E9 /* WithDataMethodModel.swift in Sources */,
 				5B71B6C226A3BADC006B62E9 /* ObservedBoardCell.swift in Sources */,
 				5B6EC14726ABBFAF00076A53 /* ObjcObserved.swift in Sources */,
+				5B770FE1274E838900C28203 /* ObservableStructure.swift in Sources */,
 				5B71B6CB26A3E121006B62E9 /* BoardDataModel.swift in Sources */,
 				5B71B6C526A3C6D1006B62E9 /* TableView.swift in Sources */,
 				5B71B6E226A4031D006B62E9 /* ViewController.swift in Sources */,
@@ -561,6 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,6 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,7 +621,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,7 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -662,6 +685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -17,7 +17,7 @@ class APIManager {
     
     static let shared: APIManager = APIManager()
     
-    let delay: Double = 0.5
+    let delay: Double = 0.1
     
     private let queue: DispatchQueue = DispatchQueue(label: "APIManager")
     
