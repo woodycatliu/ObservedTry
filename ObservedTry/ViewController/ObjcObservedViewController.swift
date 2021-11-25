@@ -10,7 +10,7 @@ import UIKit
 
 class ObjcObservedViewController: UIViewController {
     private let colors: [UIColor] = [.green, .red]
-    private let images: [String] = ["", "", ""]
+    private let images: [String] = ["100", "101", "102"]
     private var circles: [UIView] {
         return [greenCircle, redCircle]
     }
