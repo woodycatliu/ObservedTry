@@ -83,19 +83,23 @@ class ViewController: UIViewController {
     
     enum MultiType: Int, TypeNeed, CaseIterable {
     
-        case MultiObserved
+        case multiObserved, objcObserved
         
         var viewController: UIViewController {
             switch self {
-            case .MultiObserved:
+            case .multiObserved:
                 return MultiObservedViewController()
+            case .objcObserved:
+                return ObjcObservedViewController()
             }
         }
         
         var description: String {
             switch self {
-            case .MultiObserved:
+            case .multiObserved:
                 return "MultiObserved"
+            case .objcObserved:
+                return "ObjcObserved"
             }
         }
         

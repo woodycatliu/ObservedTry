@@ -22,7 +22,7 @@ class WithDataMethodViewController: UIViewController {
     }()
     
     lazy var tableView: UITableView = {
-        let tv = UITableView(frame: .zero, style: .insetGrouped)
+        let tv = UITableView(frame: .zero)
         tv.register(NormalBoardCell.self)
         tv.dataSource = self
         tv.delegate = self

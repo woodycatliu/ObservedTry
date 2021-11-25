@@ -30,11 +30,11 @@ class MultiObservedViewController: UIViewController {
     }
     
     lazy var tableView: UITableView = {
-        let tv = UITableView(frame: .zero, style: .insetGrouped)
+        let tv = UITableView(frame: .zero)
         tv.register(MultiObservedBoardCell.self, forCellReuseIdentifier: MultiObservedBoardCell.description())
         tv.dataSource = self
         tv.delegate = self
-        tv.contentInset = .init(top: 0, left: 0, bottom: 0, right: 0)
+        tv.contentInset = .init(top: 0, left: 0, bottom: 60, right: 0)
         return tv
     }()
     

@@ -36,6 +36,7 @@
 		5B770FE3274E84D700C28203 /* MultiObservedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE2274E84D700C28203 /* MultiObservedViewModel.swift */; };
 		5B770FE5274E868A00C28203 /* MultiObservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE4274E868A00C28203 /* MultiObservedViewController.swift */; };
 		5B770FE7274F339800C28203 /* MultiObservedBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE6274F339800C28203 /* MultiObservedBoardCell.swift */; };
+		5B770FE9274F4FD200C28203 /* ObjcObservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B770FE8274F4FD100C28203 /* ObjcObservedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		5B770FE2274E84D700C28203 /* MultiObservedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedViewModel.swift; sourceTree = "<group>"; };
 		5B770FE4274E868A00C28203 /* MultiObservedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedViewController.swift; sourceTree = "<group>"; };
 		5B770FE6274F339800C28203 /* MultiObservedBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiObservedBoardCell.swift; sourceTree = "<group>"; };
+		5B770FE8274F4FD100C28203 /* ObjcObservedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcObservedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				5B71B6DD26A402BD006B62E9 /* WithDataMethodViewController.swift */,
 				5B770FE4274E868A00C28203 /* MultiObservedViewController.swift */,
 				5B71B6E126A4031D006B62E9 /* ViewController.swift */,
+				5B770FE8274F4FD100C28203 /* ObjcObservedViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B770FE9274F4FD200C28203 /* ObjcObservedViewController.swift in Sources */,
 				5B71B6DC26A40035006B62E9 /* OldViewController.swift in Sources */,
 				5B71B6DE26A402BD006B62E9 /* WithDataMethodViewController.swift in Sources */,
 				5B770FE3274E84D700C28203 /* MultiObservedViewModel.swift in Sources */,
@@ -621,7 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,7 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,7 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,7 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMB28F9R4H;
 				INFOPLIST_FILE = ObservedTryUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
